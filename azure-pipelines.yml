@@ -19,3 +19,4 @@ steps:
     arguments: 'HiThereFred'
 
 - script: echo This is the source dir $(Build.SourcesDirectory)
+- script: az account list 
