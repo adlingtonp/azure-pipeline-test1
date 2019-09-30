@@ -16,6 +16,6 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'azureProvision.sh'
-    arguments: 'Hi Fred'
+    arguments: 'HiThereFred'
 
 - script: echo This is the source dir $(Build.SourcesDirectory)
