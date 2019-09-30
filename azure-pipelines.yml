@@ -9,5 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  Example: 'paul'
 steps:
-- script: echo This is pipeline $(System.DefinitionId)
+- script: echo The value of the variable is $(Example)
