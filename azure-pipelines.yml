@@ -19,4 +19,10 @@ steps:
     arguments: 'HiThereFred'
 
 - script: echo This is the source dir $(Build.SourcesDirectory)
-- script: az account list 
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise(53db002d-ccb5-4326-a6d3-0057195581cc)'
+    scriptType: 'bash'
+    scriptLocation: 'scriptPath'
+    scriptPath: 'azureCommands.sh'
