@@ -29,6 +29,6 @@ steps:
 
 - task: SSH@0
   inputs:
-    sshEndpoint: 'AzureDevOpsLinux'
+    sshEndpoint: 'LinuxVM'
     runOptions: 'commands'
     commands: 'ls -al'
