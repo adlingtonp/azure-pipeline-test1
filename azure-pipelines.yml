@@ -13,3 +13,6 @@ variables:
   Example: 'paul'
 steps:
 - script: echo The value of the variable is $(Example)
+- task: Bash@3
+  inputs:
+    filePath: 'azureProvision.sh'
