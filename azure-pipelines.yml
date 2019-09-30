@@ -26,3 +26,9 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
     scriptPath: 'azureCommands.sh'
+
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'AzureDevOpsLinux'
+    runOptions: 'commands'
+    commands: 'ls -al'
