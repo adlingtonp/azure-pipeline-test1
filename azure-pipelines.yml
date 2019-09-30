@@ -17,3 +17,5 @@ steps:
   inputs:
     filePath: 'azureProvision.sh'
     arguments: 'Hi Fred'
+
+- script: echo This is the source dir $(Build.SourcesDirectory)
