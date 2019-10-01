@@ -13,6 +13,6 @@ steps:
 
 - task: SSH@0
   inputs:
-    sshEndpoint: 'LinuxVM3'
+    sshEndpoint: 'LinuxVM4'
     runOptions: 'commands'
     commands: 'ls -al'
