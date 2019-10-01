@@ -25,3 +25,17 @@ steps:
       echo 'Hello world'
       echo $(newdbpassword)
 
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'AzureDevOpsARMServiceConnection'
+    KeyVaultName: 'AzureDevOpsKeyValut1'
+    SecretsFilter: '*'
+
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      echo 'Hello world'
+      echo $(mydbpassword)
