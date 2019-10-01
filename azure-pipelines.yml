@@ -11,6 +11,7 @@ pool:
 
 variables:
   Example: 'paul'
+  System.Debug: 'true'
 
 steps:
 - task: Bash@3
