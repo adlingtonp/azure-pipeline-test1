@@ -11,6 +11,7 @@ pool:
 
 variables:
   Example: 'paul'
+  System.Debug: 'true'
 
 steps:
 - task: Bash@3
@@ -26,8 +27,9 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'scriptPath'
     scriptPath: 'azureCommands.sh'
+
 - task: SSH@0
   inputs:
-    sshEndpoint: 'AzureDevOpsLinux'
+    sshEndpoint: 'LinuxVM3'
     runOptions: 'commands'
     commands: 'ps -ef'
