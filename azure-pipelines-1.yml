@@ -27,4 +27,4 @@ steps:
     KeyVaultName: 'AzureDevOpsKeyValut1'
     SecretsFilter: '*'
 
-- script: echo $mydbpassword
+- script: echo $(mydbpassword)
