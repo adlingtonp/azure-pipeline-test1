@@ -21,9 +21,10 @@ steps:
     runOptions: 'commands'
     commands: 'ls -al'
     
+
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'Visual Studio Enterprise(53db002d-ccb5-4326-a6d3-0057195581cc)'
+    azureSubscription: 'Visual Studio Enterprise(1)(53db002d-ccb5-4326-a6d3-0057195581cc)'
     KeyVaultName: 'AzureDevOpsKeyValut1'
     SecretsFilter: '*'
 
