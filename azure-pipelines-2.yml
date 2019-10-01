@@ -6,6 +6,8 @@
 trigger:
 - master
 
+env:
+  MY_MAPPED_ENV_VAR: $(newdbpasword)
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -16,5 +18,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo $(newdbpasword)
+    echo $env:MY_MAPPED_ENV_VAR
   displayName: 'Run a multi-line script'
