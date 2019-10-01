@@ -29,6 +29,6 @@ steps:
 
 - task: SSH@0
   inputs:
-    sshEndpoint: 'LinuxVM'
+    sshEndpoint: 'LinuxTargetVM'
     runOptions: 'commands'
     commands: 'ls -al'
