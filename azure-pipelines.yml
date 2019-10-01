@@ -30,6 +30,6 @@ steps:
 
 - task: SSH@0
   inputs:
-    sshEndpoint: 'LinuxVM2'
+    sshEndpoint: 'LinuxVM'
     runOptions: 'commands'
     commands: 'ls -al'
