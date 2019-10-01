@@ -9,8 +9,11 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
+variables:
+  Example: 'paul'
+  System.Debug: 'true'
 
+steps:
 - task: SSH@0
   inputs:
     sshEndpoint: 'LinuxVM'
