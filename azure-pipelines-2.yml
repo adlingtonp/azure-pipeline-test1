@@ -15,3 +15,13 @@ steps:
   inputs:
     filePath: 'azureProvision.sh'
     arguments: $(newdbpassword)
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
+      echo $(newdbpassword)
+
