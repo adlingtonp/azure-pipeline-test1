@@ -21,7 +21,7 @@ steps:
   inputs:
       sshEndpoint: 'MaxUbuntu'
       runOptions: 'commands'
-      commands: 'docker run --name maximo-oracle maximo-oracle-docker_maximo_1_25f89e8d8e1b;docker exec -d maximo-oracle-docker_maximo_1_25f89e8d8e1b pwd '
+      commands: 'docker run --name maximo-oracle maximo/maximo;docker exec -d maximo-oracle-docker_maximo_1_25f89e8d8e1b pwd '
 
 
 
