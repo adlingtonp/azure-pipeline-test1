@@ -18,4 +18,10 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+  - task: SSH@0
+    inputs:
+      sshEndpoint: 'MaxUbuntu'
+      runOptions: 'commands'
+      commands: 'ls -a'
+
   
