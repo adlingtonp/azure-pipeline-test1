@@ -12,7 +12,7 @@ pool:
 steps:
 - task: SSH@0
   inputs:
-    sshEndpoint: 'LinuxVM'
+    sshEndpoint: 'MaxUbuntu'
     runOptions: 'commands'
     commands: 'ls -al'
 
