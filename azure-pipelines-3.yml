@@ -10,18 +10,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: 
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
 - task: SSH@0
-    inputs:
-      sshEndpoint: 'MaxUbuntu'
-      runOptions: 'commands'
-      commands: 'ls -a'
+  inputs:
+    sshEndpoint: 'LinuxVM'
+    runOptions: 'commands'
+    commands: 'ls -al'
+
 
   
