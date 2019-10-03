@@ -17,4 +17,9 @@ steps:
     commands: 'ls -al'
 
 
-  
+- task: SSH@0
+  inputs:
+      sshEndpoint: 'MaxUbuntu'
+      runOptions: 'commands'
+      commands: 'docker exec -d maximo-oracle-docker_maximo_1_25f89e8d8e1b pwd'
+
